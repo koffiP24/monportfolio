@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() 
+{
+    int choix;
+    char caractere, rep = 'o';
+    int code_ascii;
+
+    while (rep == 'o' || rep == 'O') 
+    {
+        printf("Choisissez l'option :\n");
+        printf("1. Convertir un caractere en code ASCII\n");
+        printf("2. Convertir un code ASCII en caractere\n");
+        printf("Reponse: ");
+        scanf("%d", &choix);
+
+        if (choix == 1) 
+        {
+            printf("Entrez le caractere : ");
+            scanf(" %c", &caractere);
+            code_ascii = (int)caractere;
+            printf("Le code ASCII de '%c' est : %d\n", caractere, code_ascii);
+        }
+        else if (choix == 2) 
+        {
+            printf("Entrez le code ASCII : ");
+            scanf("%d", &code_ascii);
+            caractere = (char)code_ascii;
+            printf("Le caractere du code ASCII %d est : '%c'\n", code_ascii, caractere);
+        }
+        else 
+        {
+            printf("Choix invalide\n");
+        }
+
+        printf("Une autre conversion? (O/N): ");
+        scanf(" %c", &rep);
+    }
+
+    return 0;
+}

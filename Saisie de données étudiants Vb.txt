@@ -1,0 +1,47 @@
+Public Class Form1
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Txt1.Enabled = False
+        Me.Txt2.Enabled = False
+        Me.Txt3.Enabled = False
+        Me.ComboBox1.Enabled = False
+        Me.Button1.Visible = True
+        Me.Button2.Visible = True
+        Me.Button5.Visible = False
+        Me.Button6.Visible = False
+    End Sub
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Me.Close()
+    End Sub
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Txt1.Enabled = True
+        Me.Txt2.Enabled = True
+        Me.Txt3.Enabled = True
+        Me.ComboBox1.Enabled = True
+        Me.Button1.Visible = False
+        Me.Button5.Visible = True
+    End Sub
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Me.Txt1.Enabled = False
+        Me.Txt2.Enabled = False
+        Me.Txt3.Enabled = False
+        Me.ComboBox1.Enabled = False
+        Me.Button1.Visible = True
+        Me.Button5.Visible = False
+    End Sub
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Txt1.Enabled = True
+        Me.Txt2.Enabled = True
+        Me.Txt3.Enabled = True
+        Me.ComboBox1.Enabled = True
+        Me.Button2.Visible = False
+        Me.Button6.Visible = True
+    End Sub
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Me.Txt1.Enabled = False
+        Me.Txt2.Enabled = False
+        Me.Txt3.Enabled = False
+        Me.ComboBox1.Enabled = False
+        Me.Button2.Visible = True
+        Me.Button6.Visible = False
+    End Sub
+End Class

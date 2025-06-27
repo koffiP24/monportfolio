@@ -1,0 +1,21 @@
+Imports System
+
+Module Program
+    Sub Main(args As String())
+        Dim i, j As Integer
+        Dim t(3, 4) As Integer
+        Console.WriteLine("Entrez les valeurs de la matrice")
+        For i = 0 To 2
+            For j = 0 To 3
+                t(i, j) = Console.ReadLine()
+            Next
+        Next
+        Console.WriteLine("-----------------AFFICHAGE-------------")
+        For i = 0 To 2
+            Console.WriteLine(" ")
+            For j = 0 To 3
+                Console.Write(t(i, j) & "   ")
+            Next
+        Next
+    End Sub
+End Module
